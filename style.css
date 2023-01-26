@@ -1,0 +1,66 @@
+:root{
+    --bgGeral: #f2e987;
+    --bgCamposLista: #f4ab95;
+    --bordas:#ef71db;
+    --tituloP:#304207;
+    --texto:#2e0f07;
+    --fontexto: 1rem;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    color: var(--texto);
+}
+
+.container{
+    padding: 10px;
+    background-color: var(--bgGeral);
+    height: 100vh;
+    
+}
+
+header h1{
+    text-align: center;
+    text-decoration: underline;
+    color: var(--tituloP);
+    margin-bottom: 5px;
+}
+
+header p{
+    font-size: var(--fontexto);
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.campos div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.campos label{
+    font-weight: bold;
+}
+.campos input{
+    background-color: var(--bgCamposLista);
+    border: 2px groove var(--bordas)  ;
+}
+
+.campos_btn{
+align-self: center;
+}
+
+.campos_btn button{
+    font-size: var(--fontexto);
+    background-color: var(--texto);
+    color: var(--bordas);
+    border: 2px groove var(--bordas);
+    font-weight: bold;
+}
+

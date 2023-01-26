@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Aprovação</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de aprovação</h1>
+            <p>Coloque as informações e saiba se foi aprovado!</p>
+        </header>
+        <main>
+            <section class="campos">
+                <div>
+                    <label for="nm">
+                        Nome:
+                    </label>
+                    <input type="text" name="nome" id="nm">
+                </div>
+                <div>
+                    <label for="n1">
+                        Nota 1
+                    </label>
+                    <input type="number" name="nota1" id="n1">
+                </div>
+                <div>
+                    <label for="n2">
+                        Nota 2
+                    </label>
+                    <input type="text" name="nota2" id="n2">
+                </div>
+                <div>
+                    <label for="n3">
+                        Nota 3
+                    </label>
+                    <input type="text" name="nota3" id="n3">
+                </div>
+                <div class="campos_btn">
+                    <button id="btn-add">Adicionar</button>
+                </div>
+            </section>
+            <section id="lista">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Media</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Allan</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>Aprovado</td>
+                            <td><input type="button" value="X"><input type="button" value="S"></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
