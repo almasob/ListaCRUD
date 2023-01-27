@@ -4,7 +4,7 @@
     --bordas:#ef71db;
     --tituloP:#304207;
     --texto:#2e0f07;
-    --fontexto: 1rem;
+    --fontexto: .9rem;
 }
 
 body{
@@ -17,7 +17,8 @@ body{
     padding: 10px;
     background-color: var(--bgGeral);
     height: 100vh;
-    
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header h1{
@@ -29,6 +30,7 @@ header h1{
 
 header p{
     font-size: var(--fontexto);
+    text-align: center;
 }
 
 .campos{
@@ -40,8 +42,7 @@ header p{
 
 .campos div{
     display: flex;
-    gap: 20px;
-    align-items: center;
+    justify-content:space-between ;
 }
 
 .campos label{
@@ -50,6 +51,10 @@ header p{
 .campos input{
     background-color: var(--bgCamposLista);
     border: 2px groove var(--bordas)  ;
+    margin-right: 80px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .campos_btn{
@@ -63,4 +68,68 @@ align-self: center;
     border: 2px groove var(--bordas);
     font-weight: bold;
 }
+
+#btn-e{
+    background-image: url(https://api.iconify.design/ph:note-pencil-bold.svg?color=%231074e0);
+    background-size: cover;
+    background-color: rgba(0, 255, 179, 0.5);
+
+}
+
+#btn-r{
+    background-image: url(https://api.iconify.design/iconoir:cancel.svg);
+    background-size: cover;
+    background-color: rgba(255, 0, 0, 0.322);
+}
+
+#lista{
+    font-size: var(--fontexto);
+    width: 100%;
+    margin-top: 10px;
+}
+
+table{
+    background-color: var(--bgCamposLista);
+    border-spacing: 8px;
+    border-collapse: separate;
+    text-align: center;
+    border: 10px solid var(--bordas);
+    width: 100%;
+}
+
+th{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#dadosTb{
+    color: aliceblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+td input{
+    font-size: .5rem;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+}
+
+footer{
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 10px;
+}
+
+.ap .m{
+    background-color: green;
+}
+
+.rp .m{
+    background-color:red;
+}
+
+
+
 
