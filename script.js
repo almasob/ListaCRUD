@@ -45,7 +45,7 @@ btAd.addEventListener('click',()=>{
             <td>${nn3}</td>
             <td class='m'>${media.toFixed(2)}</td>
             <td class='m'>${situação}</td>
-            <td><input id ='btn-e' type="button" value=""><input id='btn-r' type="button" value=""></td>
+            <td><input id ='btn-e' type="button" value="" onclick = 'editar(event)'><input id='btn-r' type="button" value="" onclick = 'excluir(event)'></td>
             `
 
             linha.innerHTML = conteudo;
@@ -63,6 +63,29 @@ btAd.addEventListener('click',()=>{
         //foco volta pro input nome
         nome.focus()
 
+    if(btAd.textContent != 'Adicionar'){
+        btAd.textContent = 'Adicionar'
+    }
 
 })
 
+function excluir(event){ 
+    var a = event.target.parentNode.parentNode
+    a.remove();
+
+
+}
+
+function editar(event){
+    var a = event.target.parentNode.parentNode
+    var list = [nome,n1,n2,n3]
+
+    for(c = 0; c <4; c++){
+        var tx = a.children[c].textContent
+        list[c].value = tx;
+    }
+    console.log(a.children)
+    excluir(event)
+    console.log()
+    btAd.innerText = 'Atualizar'
+}
