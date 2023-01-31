@@ -13,7 +13,7 @@ btAd.addEventListener('click',()=>{
         alert('Preencha os campos corretamente!')
         }//se algum numero for maior que 10, da erro
         else if( n1.value > 10 || n2.value > 10 || n3.value > 10){
-            alert('Notas de 1 á 10!')
+            alert('Notas de 0 a 10!')
         }else{
             //transformando os valores do input em Number
             var nn1 = Number(n1.value)
