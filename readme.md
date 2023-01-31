@@ -16,7 +16,7 @@
 	<li>Ao adicionar as informações, estas são calculadas e inseridas na tabela</li>
 	<li>O próiprio sistema detecta a média das notas, e indica a aprovação, ou não.</li>
     <li>Você pode editar uma pessoa já adicionada á lista, clicando no botão ao lado direito para corrigir as informações, e atualizar.
-    <li> É possível também, excluir um nome já adicionado á lista, no botão aolado do "editar"!
+    <li> É possível também, excluir um nome já adicionado á lista, no botão "X" ao lado do "editar"!
     <li>Validações: não podem ter campos em branco, e as notas devem ser entre 0 e 10, apenas!
 </ul>
 
