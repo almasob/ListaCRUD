@@ -55,7 +55,7 @@ header p{
 .campos input{
     background-color: var(--bgCamposLista);
     border: 2px groove var(--bordas)  ;
-    margin-right: 80px;
+    margin-right: 50px;
     color: white;
     font-weight: bold;
     letter-spacing: 2px;
@@ -112,7 +112,6 @@ th{
 #dadosTb{
     color: aliceblue;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
 td input{
@@ -181,6 +180,10 @@ footer{
             font-size: .9rem;
             margin-top: 15px;
         }
+
+        #dadosTb{
+            letter-spacing: 1px;
+        }
 }
 
 @media screen and (min-width:710px) {
@@ -190,7 +193,7 @@ footer{
 
     footer{
         font-size: 1.2rem;
-        margin-top: 3q5px;
+        margin-top: 35px;
     }
 
 }
